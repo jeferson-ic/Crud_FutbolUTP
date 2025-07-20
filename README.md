@@ -32,22 +32,39 @@ Este proyecto es una aplicación web desarrollada con **Flask** y **MySQL** que 
 futbol_utp/
 │
 ├── app.py # Archivo principal con las rutas
+
 ├── static/
+
 │ ├── styles.css # Estilos personalizados
+
 │ └── uploads/ # Carpeta donde se guardan las imágenes
+
 ├── templates/
+
 │ ├── layout.html # Plantilla base
+
 │ ├── home.html # Página de inicio
+
 │ ├── nosotros.html # Página informativa
+
 │ └── jugadores/ # Carpeta con las vistas CRUD
+
 │ ├── listar.html
+
 │ ├── agregar.html
+
 │ └── editar.html
+
 ├── config/
+
 │ └── db.py # Conexión a la base de datos
+
 ├── static/
+
 │ └── logo.png # Logo de la universidad
+
 ├── futbol_utp.sql # Script SQL con la base de datos
+
 └── README.md # Documentación del proyecto
 
 ---
