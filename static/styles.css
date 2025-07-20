@@ -1,0 +1,49 @@
+.nav-box {
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-box:hover {
+    background-color: #a71d2a;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.hero-section h1 {
+    color: #dc3545;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+}
+
+iframe {
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.card img {
+    object-fit: cover;
+    height: 200px;
+}
+.card-title {
+    color: #dc3545;
+    font-weight: bold;
+}
