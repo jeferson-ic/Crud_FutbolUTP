@@ -31,6 +31,7 @@ Este proyecto es una aplicación web desarrollada con **Flask** y **MySQL** que 
 
 futbol_utp/
 │
+
 ├── app.py # Archivo principal con las rutas
 
 ├── static/
