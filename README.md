@@ -59,25 +59,28 @@ futbol_utp/
 bash
 git clone https://github.com/tu_usuario/futbol_utp.git
 cd futbol_utp
-2. Crear entorno virtual e instalar dependencias:
+
+### 2. Crear entorno virtual e instalar dependencias:
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
-3. Configurar la base de datos:
+
+### 3. Configurar la base de datos:
 Crear una base de datos llamada futbol_utp en MySQL.
 
 Importar el archivo futbol_utp.sql.
 CREATE DATABASE futbol_utp;
 USE futbol_utp;
 -- Luego importar el .sql desde tu gestor (MySQL Workbench, phpMyAdmin, etc.)
-4. Ejecutar el proyecto:
+
+### 4. Ejecutar el proyecto:
 python app.py
 Accede a: http://127.0.0.1:5000
 
 
 
-Autor:
+## Autor:
 Ronaldhiño Jefferson Inga Castillo - UTP - jefersoninga13@gmail.com
 
-Licencia
+## Licencia
 Este proyecto fue desarrollado con fines educativos como parte del curso Lenguaje de Programación (Docente: Pedro Hernán de la Cruz Velazco).
