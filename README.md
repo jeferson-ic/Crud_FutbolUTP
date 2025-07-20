@@ -56,7 +56,7 @@ futbol_utp/
 
 ### 1. Clonar el repositorio:
 
-```bash
+bash
 git clone https://github.com/tu_usuario/futbol_utp.git
 cd futbol_utp
 2. Crear entorno virtual e instalar dependencias:
