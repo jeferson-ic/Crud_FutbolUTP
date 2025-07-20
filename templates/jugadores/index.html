@@ -1,0 +1,46 @@
+<!-- templates/jugadores/index.html -->
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1 class="text-center mb-4">Lista de Jugadores - Fútbol UTP</h1>
+
+<div class="text-end mb-3">
+    <a href="{{ url_for('nuevo_jugador') }}" class="btn btn-success">+ Nuevo Jugador</a>
+</div>
+
+<table class="table table-bordered table-striped text-center align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Foto</th>
+            <th>Nombre</th>
+            <th>Posición</th>
+            <th>Número</th>
+            <th>Edad</th>
+            <th>Nacionalidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for jugador in jugadores %}
+        <tr>
+            <td>
+                {% if jugador[6] %}
+                    <img src="{{ url_for('static', filename='uploads/' ~ jugador[6]) }}" width="80" height="80" class="rounded">
+                {% else %}
+                    <span class="text-muted">Sin foto</span>
+                {% endif %}
+            </td>
+            <td>{{ jugador[1] }}</td>
+            <td>{{ jugador[2] }}</td>
+            <td>{{ jugador[3] }}</td>
+            <td>{{ jugador[4] }}</td>
+            <td>{{ jugador[5] }}</td>
+            <td>
+                <a href="{{ url_for('editar_jugador', id=jugador[0]) }}" class="btn btn-primary btn-sm">Editar</a>
+                <a href="{{ url_for('eliminar_jugador', id=jugador[0]) }}" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de eliminar este jugador?');">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Sección de bienvenida -->
+<div class="hero-section text-center mb-5">
+    <h1>Bienvenidos al equipo Fútbol UTP</h1>
+    <p class="lead">Somos el orgullo deportivo de la Universidad Tecnológica del Perú. Con más de 10 años de historia, hemos participado en campeonatos universitarios y representado con orgullo a nuestra institución.</p>
+</div>
+
+<!-- Sección de trofeos -->
+<div class="container mt-5">
+    <h2 class="text-center mb-4">🏆 Nuestros Trofeos</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Trofeo 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='trofeos/trofeo1.jpg') }}" class="card-img-top" alt="Trofeo Universitario">
+                <div class="card-body">
+                    <h5 class="card-title">Campeones Universitarios</h5>
+                    <p class="card-text">Ganadores del torneo interuniversitario 2023, destacando por nuestro juego ofensivo y espíritu en equipo.</p>
+                    <span class="badge bg-success">2023</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trofeo 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='trofeos/trofeo2.jpg') }}" class="card-img-top" alt="Subcampeonato">
+                <div class="card-body">
+                    <h5 class="card-title">Subcampeones Interfacultades</h5>
+                    <p class="card-text">Segundo puesto en el torneo interno de facultades UTP. Un torneo muy disputado y memorable.</p>
+                    <span class="badge bg-secondary">2022</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trofeo 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="{{ url_for('static', filename='trofeos/trofeo3.jpg') }}" class="card-img-top" alt="Trofeo Fair Play">
+                <div class="card-body">
+                    <h5 class="card-title">Premio Fair Play</h5>
+                    <p class="card-text">Reconocimiento al equipo con mejor conducta, compañerismo y respeto durante el torneo 2021.</p>
+                    <span class="badge bg-info text-dark">2021</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ratio ratio-16x9 mt-3">
+        <iframe src="https://www.youtube.com/embed/xaiE4i1hjGI" title="Video institucional UTP" allowfullscreen></iframe>
+    </div>
+</div>
+{% endblock %}
